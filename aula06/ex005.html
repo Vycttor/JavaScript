@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(68, 125,199);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo  usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+
+    <!---JavaScript-->
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var d = window.ducument.getElementById('msg')//id msg
+
+        //InnerText ira pegar o texto sem formatação, diferente do  innerHTML que já puxa as informações com as formatações.
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        
+        document.write(p1.innerHTML)
+        
+
+        //Nas linhas abaixo é possível alterar o style de forma isolada sobrepondo o style feito acima do head desse document.
+        corpo.style.background = 'black'
+        p1.style.color = 'blue'
+        //Também é posssível modificar um tag, defininfo um if para a mesma.
+        
+        d.style.background = 'green'
+        
+    </script>
+    
+</body>
+</html> 

@@ -10,6 +10,6 @@ Aprendendo conceitos básicos de JavaScript.
 Nos repositórios é possível encontrar conceitos práticos em código, dos seguintes tópicos abaixo.
 
 ##### Comandos Básicos
-##### Entendendo
+##### Entendendo DOM
 ##### Condições em JavaScript
 ##### Repetições
